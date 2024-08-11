@@ -3,9 +3,10 @@
     <nav class="bg-gray-800 text-white p-4">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <!-- Logo or Website Title -->
-        <div class="text-lg font-semibold flex items-center">
-          <a href="#" class="text-white hover:text-gray-400">My Website</a>
+        <div class="flex items-center">
+          <img src="/assets/images/med-link.svg" alt="logo" class="h-10"> <!-- Adjust the height as needed -->
         </div>
+        
   
         <!-- Mobile Menu Button -->
         <button @click="toggleMenu" class="text-white block md:hidden focus:outline-none">
