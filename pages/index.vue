@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="bg-gray-800 text-white p-4">
+    <nav class="mycol text-white p-4">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <!-- Logo or Website Title -->
         <div class="flex items-center">
@@ -58,7 +58,7 @@
           </template>
           <template #footer>
             <div class="flex justify-center p-4">
-              <Button @click="openModal(service)" label="Learn More" class="bg-blue-500 text-white hover:bg-blue-600" />
+              <button @click="openModal(service)"  class="mycol text-white p-2 rounded-md" >Learn More</button>
             </div>
           </template>
         </Card>
@@ -70,7 +70,7 @@
         <h3 class="text-xl font-semibold mb-2">{{ selectedService?.title }}</h3>
         <h4 class="text-lg mb-4">{{ selectedService?.subtitle }}</h4>
         <p class="text-gray-700 mb-4">{{ selectedService?.description }}</p>
-        <Button label="Close" icon="pi pi-times" @click="closeModal" class="p-button-secondary" />
+        <button icon="pi pi-times" @click="closeModal" class="mycol text-white p-2 rounded-md" >Close</button>
       </Dialog>
     </div>
 
@@ -143,7 +143,7 @@
         <div class="flex items-center justify-between">
           <button
             type="submit"
-            class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline"
+            class="mycol text-white font-bold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline"
           >
             Send
           </button>
@@ -154,7 +154,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-4">
+    <footer class="mycol text-white p-4">
       <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-between items-center">
         <div class="text-center md:text-left mb-4 md:mb-0">
           <p class="text-sm mb-2">&copy; 2024 My Website. All rights reserved.</p>
@@ -291,5 +291,8 @@ line-height: 2.25rem;
 }
 .mydiv{
   background-color: rgb(193,209,220)
+}
+.mycol{
+  background-color: rgb(158,40,41);
 }
 </style>
