@@ -154,15 +154,28 @@
     </div>
 
     <!-- Footer -->
-    <footer class="mycol text-white p-4">
+    <footer class="mycol text-white p-4 flex justify-center">
       <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-between items-center">
+        <!-- Existing section: Footer text and links -->
         <div class="text-center md:text-left mb-4 md:mb-0">
-          <p class="text-sm mb-2">&copy; 2024 My Website. All rights reserved.</p>
+          <p class="text-sm mb-2">&copy; 2024 Zemy-Group.com. All rights reserved.</p>
           <p class="text-sm">
             <a href="#" class="hover:text-gray-400">Privacy Policy</a> | 
             <a href="#" class="hover:text-gray-400">Terms of Service</a>
           </p>
         </div>
+        
+        <!-- New section: Get in Touch -->
+        <div class="text-center md:text-left mb-4 md:mb-0">
+          <h4 class="text-lg font-semibold mb-2">Get in Touch</h4>
+          <p class="text-sm mb-2">147 W 35th St, New York, NY 10001</p>
+          <p class="text-sm mb-2">+1 (917) 6094-597</p>
+          <p class="text-sm">
+            <a href="mailto:info@zemy-group.com" class="hover:text-gray-400">info@zemy-group.com</a>
+          </p>
+        </div>
+    
+        <!-- Existing section: Social Media Icons -->
         <div class="flex justify-center md:justify-end space-x-4">
           <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
@@ -171,6 +184,7 @@
         </div>
       </div>
     </footer>
+    
   </div>
 </template>
 
